@@ -15,13 +15,6 @@ Open `index.html` in a browser. You need internet, because Bootstrap is loaded f
 - Contact: form with name, email, message and a submit button
 - Footer: copyright and social icons
 
-## travel/ – Twiga Trails (Components)
-- Navbar, hero with heading, subheading and button
-- Destinations: 3 Bootstrap cards with image, title, text and "Learn More"
-- Tours: accordion made with `<details>` + `<summary>` (works without JavaScript)
-- Contact: form with name, email, destination (`form-select`) and message
-- Footer: copyright and social icons
-
 ## Responsive
 Grids show 3 columns on bigger screens and 1 column on phones.
 On phones the navbar puts the name on top and the links underneath.
