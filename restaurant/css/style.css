@@ -1,0 +1,91 @@
+/* ===== Colours used on the page ===== */
+:root {
+  --dark: #1f1a17;    /* charcoal */
+  --ember: #d9581f;   /* orange */
+  --green: #1d4a3c;   /* leaf green */
+  --light: #f5f3ee;   /* page background */
+}
+
+body {
+  background-color: var(--light);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: var(--dark);
+}
+
+.navbar-brand {
+  color: var(--ember) !important;
+  font-weight: bold;
+}
+
+/* ===== Custom orange button ===== */
+.btn-ember {
+  background-color: var(--ember);
+  color: white;
+}
+
+.btn-ember:hover {
+  background-color: #b6461a;
+  color: white;
+}
+
+/* ===== Hero section ===== */
+.hero {
+  /* a dark layer on top of the image makes the white text easy to read */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url("../img/hero.svg") center / cover;
+  padding: 150px 0;
+}
+
+/* ===== Menu cards ===== */
+.price {
+  color: var(--ember);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* ===== About section ===== */
+.about {
+  background-color: var(--green);
+  color: white;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: var(--dark);
+  color: white;
+}
+
+.social {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+.social:hover {
+  color: var(--ember);
+}
+
+/* ===== Smaller screens ===== */
+@media (max-width: 576px) {
+  /* put the name on top and the links underneath so they fit */
+  .navbar .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    margin: 0 auto;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
